@@ -1,0 +1,90 @@
+/* Header */
+#header {
+	.page-header {
+		border-bottom: 0;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 5px 0;
+		.custom-logo {
+			@media ( max-width: 768px ) {
+				display: block;
+				float: none;
+				margin: 15px auto;
+				max-width: 130px;
+			}
+		}
+		#main-navigation {
+			margin: 60px 0 0;
+			padding: 0;
+			@media ( max-width: 1040px ) {
+				margin-top: 40px;
+			}
+			@media ( max-width: 768px ) {
+				margin-top: 0;
+			}
+			.navbar-brand {
+				text-transform: uppercase;
+			}
+			nav {
+				padding: 0;
+				ul.navbar-nav {
+					@media ( max-width: 768px ) {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+				ul.navbar-nav > li > a {
+					color: $cinza-escuro;
+					text-transform: uppercase;
+					@media ( max-width: 1040px ) {
+						font-size: 14px;
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+					@media ( max-width: 870px ) {
+						font-size: 13px;
+						padding-left: 7px;
+						padding-right: 7px;
+					}
+					&:hover {
+						color: $preto;
+					}
+				}
+			}
+			button.navbar-toggle {
+				background: $preto;
+				border-radius: 0;
+				span { 
+					background-color: $branco;
+				}
+				&:active,
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+		.contatos,
+		.navbar-brand {
+			margin: 70px 0 0;
+			@media ( max-width: 1040px ) {
+				margin-top: 50px;
+			}
+			@media ( max-width: 768px ) {
+				margin-top: 0;
+				padding: 15px 0;
+			}
+			.telefone {
+				background: url( '../images/icons/telefone.png' ) left center no-repeat transparent;
+				background-size: 45px;
+				font-size: 18px;
+				font-weight: lighter;
+				padding: 25px 0 25px 45px;
+				@media ( min-width: 768px ) and ( max-width: 870px ) {
+					background-size: 35px;
+					font-size: 16px;
+					padding-left: 35px;
+				}
+			}
+		}
+	}	
+}

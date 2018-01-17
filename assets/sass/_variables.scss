@@ -1,0 +1,19 @@
+// ==========================================================================
+// Theme Custom Variables
+// ==========================================================================
+
+//
+// Example, Try next line!
+//
+
+// $brand-primary: blueviolet;
+$branco: #ffffff;
+$preto: #000000;
+$cinza-escuro: #202020;
+
+@mixin transition( $transition ) {
+  transition: $transition;
+     -o-transition: $transition;
+      -moz-transition: $transition;
+          -webkit-transition: $transition;
+}
